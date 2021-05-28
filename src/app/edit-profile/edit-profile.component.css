@@ -44,19 +44,19 @@ ul {
   
   input[type=submit] {
     width: 30%;
-    background-color: black;
-    color: yellow;
+    background-color: rgb(255, 238, 0);
+    color: rgb(0, 0, 0);
     padding: 14px 20px;
-    margin: 30px 0;
+    margin: 0px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 400px;
+    margin-left: 150px;
     
   }
   
   input[type=submit]:hover {
-    background-color: black;
+    background-color: yellowgreen;
     font-size: large;
   }
   
@@ -111,4 +111,37 @@ body
 {
   width: 100%;
   margin-left: 70px;
+}
+body{
+  font-family: avro;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1500px;
+  width: 100%;
+  /* background-image: url('/assets/images/bgimg.jpg'); */
+}
+.nice
+{
+height: 1500px;
+width: 100%;
+}
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.568); /* Black w/opacity/see-through rgba(212, 198, 198, 0.144)*/
+  color: white;
+  font-weight: bold;
+  /* border: 3px solid #f1f1f1; */
+  position: absolute;
+  top: 130%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  height:1300px;
+  padding: 20px;
+  text-align: center;
+}
+form{
+  margin-left: -12%;
 }
