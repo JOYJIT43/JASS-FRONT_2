@@ -186,36 +186,87 @@
     margin-left: 5%;
   }
 
+
+.nice
+{
+height: 2600px;
+width: 100%;
+overflow: hidden;
+}
 body{
   font-family: avro;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 2250px;
+  height: 2600px;
+  overflow: hidden;
   width: 100%;
   /* background-image: url('/assets/images/bgimg.jpg'); */
 }
-.nice
-{
-height: 2250px;
-width: 100%;
-}
 .bg-text {
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.568); /* Black w/opacity/see-through */
+  background-color: rgba(0, 0, 0, 0.473); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
   /* border: 3px solid #f1f1f1; */
   position: absolute;
-  top: 180%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 90%;
-  height:1950px;
+  width: 85%;
+  height:728px;
   padding: 20px;
   text-align: center;
 }
 b{
   margin-left: -700px;
+}
+.bg-text-2{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.637);  /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  /* border: 3px solid #f1f1f1; */
+  position: absolute;
+  top: 210%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 85%;
+  height:725px;
+  padding: 20px;
+  text-align: center;
+}
+.bg-text-3{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.637); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  /* border: 3px solid #f1f1f1; */
+  position: absolute;
+  top: 332%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 85%;
+  height:635px;
+  padding: 20px;
+  text-align: center;
+}
+.bg-text-4{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(202, 192, 192, 0); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  /* border: 3px solid #f1f1f1; */
+  position: absolute;
+  top: 390%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 85%;
+  height:100px;
+  padding: 20px;
+  text-align: center;
 }
