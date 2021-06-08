@@ -1,3 +1,4 @@
+
 <!-- <ul>
     <li><a href="#"><b style="font-size: 25px;">JASS</b></a></li>
     <li><a href="#">Feed</a></li>
@@ -7,102 +8,103 @@
     <li style="float:right"><a class="active" href="#">Logout</a></li>
   </ul>
    -->
-
-<body>
-  <div class="topnav">
-    <a style="font-size:25px;color: rgb(255, 238, 0);" class="active" href="#home">
-      <h3>JASS</h3>
-    </a>
-    <button style="position : absolute;left:150px;top:14px" type="button" class="btn btn-outline-warning">Feed</button>
-    <button style="position : absolute;left:230px;top:14px" type="button"
-      class="btn btn-outline-warning">Videos</button>
-    <button style="position : absolute;right:270px;top:14px" type="button"
-      class="btn btn-outline-warning">Profile</button>
-    <button style="position : absolute;right:142px;top:14px" type="button" class="btn btn-outline-warning">Create
-      Post</button>
-    <button style="position : absolute;right:45px;top:14px" type="button"
-      class="btn btn-outline-warning">Logout</button>
-  </div>
-  <img class="nice" src="./assets/images/four.jpg" alt="Notebook">
-  <br><br><br><br>
-  <div class="master">
-    <div class="bg-text">
-      <form class="form" action="/action_page.php">
-        <label class="font" for="title">Thread Title</label><br />
-        <input type="text" id="title" name="title" placeholder="Thread Title.."><br />
-
-        <label class="font" for="desc">Description</label><br />
-        <!-- <input type="text" id="desc" name="desc" placeholder="Description.."><br/> -->
-        <textarea>Some text...</textarea><br />
-
-        <label style="margin-left: -660px;"class="font" for="sub">Select Subject</label><br />
-        <select id="country" name="country">
-          <option value="">test</option>
-          <option value="">test1</option>
-          <option value="">test2</option>
-        </select><br />
-
-        <label style="margin-left: -707px;"class="font" for="sub">Add More</label><br />
-        <label class="container1"><b>One</b>
-          <input type="checkbox" checked="checked">
-          <span class="checkmark"></span>
-        </label>
-        <label class="container1"><b>Two</b>
-          <input type="checkbox">
-          <span class="checkmark"></span>
-        </label>
-        <label class="container1"><b>Three</b>
-          <input type="checkbox">
-          <span class="checkmark"></span>
-        </label>
-        <label class="container1"><b>Four</b>
-          <input type="checkbox">
-          <span class="checkmark"></span>
-        </label>
+   <body>
+    <div class="topnav">
+      <a style="font-size:25px;color: rgb(255, 238, 0);" class="active" href="#home">
+        <h3>JASS</h3>
+      </a>
+      <button style="position : absolute;left:150px;top:14px" type="button" class="btn btn-outline-warning">Feed</button>
+      <button style="position : absolute;left:230px;top:14px" type="button"
+        class="btn btn-outline-warning">Videos</button>
+      <button style="position : absolute;right:270px;top:14px" type="button"
+        class="btn btn-outline-warning">Profile</button>
+      <button style="position : absolute;right:142px;top:14px" type="button" class="btn btn-outline-warning">Create
+        Post</button>
+      <button style="position : absolute;right:45px;top:14px" type="button"
+        class="btn btn-outline-warning">Logout</button>
+    </div>
+    <img class="nice" src="./assets/images/six.jpg" alt="Notebook">
+    <br><br><br><br>
+    <div class="master">
+      <div class="bg-text">
+        <form class="form" action="/action_page.php">
+          <label class="font" for="title">Thread Title</label><br />
+          <input style="border: 2px solid aqua;"type="text" id="title" name="title" placeholder="Thread Title.."><br />
+  
+          <label class="font" for="desc">Description</label><br />
+          <!-- <input type="text" id="desc" name="desc" placeholder="Description.."><br/> -->
+          <textarea  style="border: 2px solid aqua;">Some text...</textarea><br />
+  
+          <label style="margin-left: -660px;"class="font" for="sub">Select Subject</label><br />
+          <select  style="border: 2px solid aqua;" id="country" name="country">
+            <option value="">test</option>
+            <option value="">test1</option>
+            <option value="">test2</option>
+          </select><br />
+  
+          <label style="margin-left: -707px;"class="font" for="sub">Add More</label><br />
+          <label class="container1"><b>One</b>
+            <input type="checkbox" (click)="assignment_box =!assignment_box">
+            <!-- <input type="checkbox" checked="checked"> -->
+            <span class="checkmark"></span>
+          </label>
+          <label class="container1"><b>Two</b>
+            <input type="checkbox" (click)="lecture_box =!lecture_box">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container1"><b>Three</b>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container1"><b>Four</b>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          </form>
+      </div>
+      <div class="bg-text-2"*ngIf="assignment_box">
+        <form class="form" action="/action_page.php">
+          <!-- style="position: absolute;top:700px;margin-left: -420px;"  -->
+        <label style="margin-left: -575px;margin-top: 20px;"class="font" for="title">Assignment
+          Details</label><br />
+        <span style="margin-top:30px ;" class="span">Assignment Title</span><br />
+        <input  style="border: 2px solid rgb(255, 0, 0)"type="text" (click)="assignment =!assignment" id="title" name="title" placeholder="Thread Title.."><br />
+  
+        <span class="span" *ngIf="!assignment">Assignment Description</span><br />
+        <input  style="border: 2px solid rgb(255, 0, 0);"type="text" *ngIf="!assignment"id="title" name="title" placeholder="Thread Title.."><br />
+  
+        <span class="span"*ngIf="!assignment">Submit Link 1</span><br />
+        <input  style="border: 2px solid rgb(255, 0, 0);"type="text"*ngIf="!assignment" id="title" name="title" placeholder="Thread Title.."><br />
+  
+        <span class="span" *ngIf="!assignment">Submit Link 2</span><br />
+        <input  style="border: 2px solid rgb(255, 0, 0);"type="text" *ngIf="!assignment" id="title" name="title" placeholder="Thread Title.."><br />
         </form>
-    </div>
-    <div class="bg-text-2">
-      <form class="form" action="/action_page.php">
-        <!-- style="position: absolute;top:700px;margin-left: -420px;"  -->
-      <label style="margin-left: -575px;margin-top: 20px;"class="font" for="title">Assignment
-        Details</label><br />
-      <span style="margin-top:30px ;" class="span">Assignment Title</span><br />
-      <input type="text" id="title" name="title" placeholder="Thread Title.."><br />
-
-      <span class="span">Assignment Description</span><br />
-      <input type="text" id="title" name="title" placeholder="Thread Title.."><br />
-
-      <span class="span">Submit Link 1</span><br />
-      <input type="text" id="title" name="title" placeholder="Thread Title.."><br />
-
-      <span class="span">Submit Link 2</span><br />
-      <input type="text" id="title" name="title" placeholder="Thread Title.."><br />
+      </div>
+      <div class="bg-text-3"*ngIf="lecture_box">
+        <form class="form" action="/action_page.php">
+          <!-- style="position: absolute;top:1320px;margin-left: -420px;" -->
+        <label style="text-align:left;margin-left: -625px;margin-top: 20px;" class="font" for="title">Lecture
+          Details</label><br />
+        <br><br><br>
+        <span style="margin-top:-20px ;"class="span">Lecture Title</span><br />
+        <input style="border: 2px solid rgb(251, 255, 0)"type="text"(click)="lecture =!lecture" id="title" name="title" placeholder="Thread Title.."><br />
+  
+        <span class="span"*ngIf="!lecture">Lecture Description</span><br />
+        <input style="border: 2px solid rgb(251, 255, 0)"type="text"*ngIf="!lecture" id="title" name="title" placeholder="Thread Title.."><br />
+  
+        <span class="span"*ngIf="!lecture">Lecture Link 1</span><br />
+        <input style="border: 2px solid rgb(251, 255, 0)"type="text"*ngIf="!lecture" id="title" name="title" placeholder="Thread Title.."><br />
+        
       </form>
-    </div>
-    <div class="bg-text-3">
-      <form class="form" action="/action_page.php">
-        <!-- style="position: absolute;top:1320px;margin-left: -420px;" -->
-      <label style="margin-left: -625px;margin-top: 20px;" class="font" for="title">Lecture
-        Details</label><br />
-      <br><br><br>
-      <span style="margin-top:-20px ;"class="span">Assignment Title</span><br />
-      <input type="text" id="title" name="title" placeholder="Thread Title.."><br />
-
-      <span class="span">Lecture Description</span><br />
-      <input type="text" id="title" name="title" placeholder="Thread Title.."><br />
-
-      <span class="span">Lecture Link 1</span><br />
-      <input type="text" id="title" name="title" placeholder="Thread Title.."><br />
+      </div>
+  
+      <div class="bg-text-4">
+        <form class="form" action="/action_page.php">
+        <input *ngIf="!assignment" style="margin-left: -3%;margin-top: 5%;" type="submit" value="Submit">
+      </form>
+      </div>
       
-    </form>
     </div>
-
-    <div class="bg-text-4">
-      <form class="form" action="/action_page.php">
-      <input style="margin-left: -3%;margin-top: 5%;" type="submit" value="Submit">
-    </form>
-    </div>
-    
-  </div>
-
-</body>
+  
+  </body>

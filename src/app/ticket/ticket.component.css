@@ -57,7 +57,7 @@ ul {
   }
   
   input[type=submit]:hover {
-    background-color: rgb(154, 250, 11);
+    background-color:aqua;
     font-size: large;
   }
 
@@ -114,7 +114,9 @@ ul {
     /* margin-left: 100px; */
     margin-bottom: -19px;
     position: relative;
-    left:-38%;
+    left:0%;
+    text-align:left ;
+    color: yellow;
   }.topnav {
     background-color: rgb(0, 0, 0);
     overflow: hidden;
@@ -163,23 +165,23 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1200px;
+  height: 1100px;
   width: 105%;
   /* background-image: url('/assets/images/bgimg.jpg'); */
 }
 .nice
 {
-height: 1200px;
+height: 1100px;
 width: 105%;
 }
 .bg-text {
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.384); /* Black w/opacity/see-through */
+  background-color: rgba(0, 0, 0, 0.486); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
   /* border: 3px solid #f1f1f1; */
   position: absolute;
-  top: 105%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -187,4 +189,5 @@ width: 105%;
   height:800px;
   padding: 20px;
   text-align: center;
+  border:2px solid #ff0000;
 }

@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-post.component.css']
 })
 export class CreatePostComponent implements OnInit {
-
+  assignment = true;
+  lecture =true;
+  assignment_box = false;
+  lecture_box = false;
   constructor() { }
 
   ngOnInit(): void {
